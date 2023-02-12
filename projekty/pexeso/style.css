@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #098899;
+}
+
+.nadpis {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  margin-top: 2rem;
+  border: 1rem;
+}
+
+.app {
+  padding: 25px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+.karty,
+.karta,
+.view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.karty {
+  height: 600px;
+  width: 600px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.karty .karta {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  height: calc(100% / 4 - 10px);
+  width: calc(100% / 4 - 10px);
+}
+.karta.shake {
+  animation: shake 0.35s ease-in-out;
+}
+
+.karta .view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 30%;
+  background: #fff;
+  pointer-events: none;
+  backface-visibility: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.25s linear;
+}
+.karta .front-view img {
+  width: 4rem;
+}
+.karta .back-view img {
+  width: 4rem;
+}
+.karta .back-view {
+  transform: rotateY(-180deg);
+}
+.karta.flip .back-view {
+  transform: rotateY(0);
+}
+.karta.flip .front-view {
+  transform: rotateY(180deg);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-13px);
+  }
+  40% {
+    transform: translateX(13px);
+  }
+  60% {
+    transform: translateX(-8px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+}
+
+@media screen and (max-height: 856px) {
+  .nadpis {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .karty {
+    height: 450px;
+    width: 450px;
+  }
+  .karta .front-view img {
+    width: 40px;
+  }
+  .karta .back-view img {
+    max-width: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .karty {
+    height: 350px;
+    width: 350px;
+  }
+  .karta .front-view img {
+    width: 28px;
+  }
+  .karta .back-view img {
+    max-width: 40px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .karty {
+    height: 300px;
+    width: 300px;
+  }
+  .karta .front-view img {
+    width: 28px;
+  }
+  .karta .back-view img {
+    max-width: 32px;
+  }
+}

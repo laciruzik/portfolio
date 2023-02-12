@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <title>Hádzanie kockou</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png" />
+  </head>
+  <body>
+    <main>
+      <section class="hrac hrac__0 hrac__active">
+        <h2 class="name" id="name__0">Hráč 1</h2>
+        <p class="score" id="score__0">43</p>
+        <div class="current">
+          <p class="current__nadpis">Skóre</p>
+          <p class="current__skore" id="current__0">0</p>
+        </div>
+      </section>
+      <section class="hrac hrac__1">
+        <h2 class="name" id="name__1">Hráč 2</h2>
+        <p class="score" id="score__1">24</p>
+        <div class="current">
+          <p class="current__nadpis">Skóre</p>
+          <p class="current__skore" id="current__1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="kocka" />
+      <button class="btn btn__nova__hra">🔄 Nová hra</button>
+      <button class="btn btn__hodit__kockou">🎲 hodiť kockou</button>
+      <button class="btn btn__podrzat">📥 Podržať</button>
+      <button id="myBtn" class="btn btn__info">❓ Info</button>
+      <div id="myModal" class="modal">
+        <div class="modal__obsah">
+          <span class="close"> X </span> <br /><br /><br />
+          <p>
+            Každý ťah hráč opakovane hádže kockou, kým nepadne buď 1, alebo kým
+            sa hráč nerozhodne „podržať“: <br />
+            Ak hráč hodí 1, nedostane nič a je na rade ďalší hráč. <br />
+            Ak hráč hodí akékoľvek iné číslo, pripočíta sa k celkovému súčtu
+            jeho ťahu a jeho ťah pokračuje. <br />
+            Ak sa hráč rozhodne „podržať“, súčet jeho ťahu sa pripočíta k jeho
+            skóre a je na rade ďalší hráč. <br />
+            Vyhráva hráč, ktorý ako prvý dosiahne 100 alebo viac bodov.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

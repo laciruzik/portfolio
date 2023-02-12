@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest-countries API</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Rest-countries API</h1>
+    <div id="app">
+      <div id="flag-container">
+        <img src="" alt="" />
+      </div>
+      <div id="main-container">
+        <div id="info-container">
+          <p>Capital: <span id="capital"></span></p>
+          <p>Population: <span id="population"></span></p>
+          <p>Currencies: <span id="currencies"></span></p>
+          <p>Region: <span id="region"></span></p>
+          <p>
+            Subregion:
+            <span id="subregion">
+              <p>Time-zones: <span id="timezones"></span></p>
+            </span>
+          </p>
+        </div>
+        <div id="info-container">
+          <p>Car-sign: <span id="car-sign"></span></p>
+          <p>Driving side: <span id="side"></span></p>
+
+          <p>Languages: <span id="languages"></span></p>
+          <p>Borders: <span id="borders"></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <select id="countries"></select>
+      <button class="button" id="info">📋 Info</button>
+      <button class="button" id="map">🏦 Map</button>
+    </div>
+  </body>
+</html>

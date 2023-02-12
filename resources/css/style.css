@@ -1,0 +1,619 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  color: rgb(59, 59, 59);
+  font-family: "Quicksand", "Sans-Serif";
+  font-weight: 45400;
+  font-size: 115%;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.priebeh__zamestnani__row {
+  max-width: 1250px;
+  margin: auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+.box p {
+  font-size: 130%;
+  line-height: 175%;
+}
+
+.icon__big {
+  font-size: 350%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+  margin-left: 25%;
+}
+
+/* unvisited link */
+.skola__link:link {
+  color: blue;
+}
+
+/* visited link */
+.skola__link:visited {
+  color: purple;
+}
+
+/* mouse over link */
+.skola__link:hover {
+  color: green;
+}
+
+.icon__small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+.button__main:link,
+.button__main:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 450;
+  text-decoration: none;
+  border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  border: 1px solid #e47d22;
+  color: #e67e22;
+}
+
+.button__main:hover,
+.button__main:active {
+  background-color: #cf6d17;
+  border: 1px solid #cf6d17;
+  color: rgb(255, 255, 255);
+}
+
+.section__Domov {
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(img/background_.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(img/background_.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.vitajte__div {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.vitajte__nadpis {
+  font-size: 400%;
+  margin: 0.5%;
+  margin-bottom: 4%;
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  word-spacing: 0.1em;
+  letter-spacing: 0.05em;
+}
+
+.vitajte__nadpis:hover,
+.vitajte__nadpis:active {
+  color: #cf6d17;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.projekty {
+  list-style: none;
+  width: 100%;
+  height: 15rem;
+}
+
+.projekty li {
+  display: block;
+  float: left;
+  width: 33.33333%;
+  height: 17rem;
+}
+
+.box img {
+  height: auto;
+  width: 50%;
+
+  margin-bottom: 10%;
+  margin-left: 25%;
+}
+
+.skola {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.section__priebeh__zamestnani {
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(img/background_.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(img/background_.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 250%;
+  color: #fff;
+  font-size: 120%;
+  line-height: 170%;
+  padding: 150px 0px;
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+  background-color: rgb(218, 218, 218);
+  padding: 50px 0;
+  font-size: 80%;
+  align-items: center;
+}
+
+.social__links {
+  list-style: none;
+  margin-left: 75%;
+}
+
+.social__links li {
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.section__projekty__nadpis {
+  height: 6rem;
+  position: sticky;
+  text-align: center;
+  font-size: 250%;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.clock {
+  color: #e67e22;
+  font-size: 2rem;
+  font-family: Orbitron;
+  letter-spacing: 0.2rem;
+}
+
+.clock__social {
+  position: relative;
+  top: 90%;
+  left: 5%;
+}
+
+.tabbed__component {
+  max-width: 80rem;
+  margin: 9rem auto 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.tabbed__component__karty {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  margin-right: 2.5rem;
+  transform: translateY(-50%);
+}
+
+.tab span {
+  margin-right: 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.tab__obsah {
+  display: none;
+  font-size: 1rem;
+  padding: 2.5rem 7rem 6.5rem 7rem;
+}
+
+.tab__obsah__active {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  row-gap: 0.5rem;
+}
+
+.tab__nadpis {
+  font-size: 2.2rem;
+  font-weight: 500;
+  align-self: center;
+}
+
+.tab__obsah p {
+  grid-column: 2;
+}
+
+.section1__nadpis {
+  max-width: 80rem;
+  margin: 0 auto 8rem auto;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
+}
+
+.sections {
+  padding: 4rem 4rem;
+  background-color: rgb(218, 218, 218);
+  transition: transform 1s, opacity 1s;
+}
+
+.tabbed__button {
+  display: inline-block;
+  background-color: #e67e22;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1.25rem 4.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tabbed__button:hover {
+  background-color: rgb(0, 197, 171);
+}
+
+.tab__active {
+  background-color: rgb(0, 197, 171);
+  transform: translateY(-66%);
+}
+
+.timeline {
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.timeline__obsah {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+.logo {
+  max-width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip__box__horizontal {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip__box__inner__horizontal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip__box__horizontal:hover .flip__box__inner__horizontal {
+  transform: rotateY(180deg);
+}
+
+.flip__box__front__horizontal,
+.flip__box__back__horizontal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip__box__front__horizontal {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip__box__back__horizontal {
+  background-color: grey;
+  transform: rotateY(180deg);
+}
+
+.flip__box__vertical {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #f1f1f1;
+  perspective: 1000px;
+}
+.flip__box__inner__vertical {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip__box__vertical:hover .flip__box__inner__vertical {
+  transform: rotateX(180deg);
+}
+
+.flip__box__front__vertical,
+.flip__box__back__vertical {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip__box__front__vertical {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip__box__back__vertical {
+  text-align: center;
+  background-color: grey;
+  transform: rotateX(180deg);
+}
+
+.section__projekty {
+  padding-top: 5%;
+  background-color: rgb(218, 218, 218);
+}
+
+.projekty__foto {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  height: 17rem;
+}
+
+.projekty__foto img {
+  opacity: 0.8;
+  width: 100%;
+  height: 17rem;
+  overflow: hidden;
+}
+
+.projekty__nazov {
+  color: #000;
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.web__icon {
+  width: 10%;
+  display: float;
+  margin: 3% 3% 13% 10%;
+  padding: 1%;
+}
+
+.social__icons {
+  width: 2.5rem;
+}
+
+header {
+  background-color: #e47d22;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0 1% 55%;
+  z-index: 999;
+  transition: 0.6s;
+}
+
+header.sticky {
+  background-color: rgb(59, 59, 59);
+  padding: 0.5% 0 0.5% 55%;
+}
+
+header .navbar__menu {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar__menu a {
+  font-size: 17px;
+  font-weight: 600;
+  font-style: bold;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 7px;
+  padding: 5px 7px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .navbar__menu a:hover {
+  color: #000;
+  background: #fff;
+}
+
+header .navbar__tlacidla {
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+header .ciara {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+header .navbar__meno {
+  position: fixed;
+  top: center !important;
+  left: 2% !important;
+  font-family: "Quicksand", "Sans-Serif";
+  font-weight: bold;
+  font-size: 115%;
+  color: white;
+}
+
+.priebeh {
+  display: flex;
+  position: center;
+  padding-left: 30%;
+}
+
+.gmail {
+  cursor: pointer;
+}
+
+.skola__nadpis {
+  font-size: 2rem;
+}
+
+.social__links__footer {
+  padding-top: 5%;
+}

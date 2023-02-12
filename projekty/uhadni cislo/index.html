@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <title>Uhádni číslo!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Uhádni číslo!</h1>
+      <p class="medzi">(Medzi 1 a 50)</p>
+      <button class="btn znova">Znova!</button>
+      <div class="cislo">?</div>
+    </header>
+    <main>
+      <section class="left__section">
+        <input type="number" class="guess" />
+        <button class="btn check">Potvrdiť</button>
+      </section>
+      <section class="right__section">
+        <p class="odkaz">Hádaj...</p>
+        <p class="label__score">💯 Skóre: <span class="score">20</span></p>
+        <p>🥇 Najlepšie: <span class="highscore">0</span></p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

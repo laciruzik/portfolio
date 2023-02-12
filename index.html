@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css" />
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+  <link rel="stylesheet" type="text/css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <title>Ing. Ladislav Ružík</title>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <a class="navbar__meno"> Ing. Ladislav Ružík</a>
+    <div class="navbar__menu">
+      <div class="navbar__tlacidla">
+        <p class="tlacidlo__X"> &#x2716 </p>
+      </div>
+      <a href="#section__Domov">Domov</a>
+      <a href="#section__1">Základné údaje</a>
+      <a href="#section__3">Vzdelanie</a>
+      <a href="#section__4">Priebeh zamestnaní</a>
+      <a href="#section__5">Moje projekty</a>
+    </div>
+    <div class="navbar__tlacidla tlacidlo__menu">
+      <div class="ciara"></div>
+      <div class="ciara"></div>
+      <div class="ciara"></div>
+    </div>
+  </header>
+
+  <section class="section__Domov" id="section__Domov">
+    <div class="vitajte__div">
+      <div>
+        <h1 class="vitajte__nadpis"> Vitajte! </h1>
+      </div>
+      <div>
+        <a class="button__main" href="/resources/pdf/Životopis - Ružík.pdf" target="_blank" rel="noopener">📩
+          Životopis</a>
+        <a class="button__main" href="#section__5">Moje Projekty</a>
+      </div>
+
+    </div>
+    <div class="clock__social">
+      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+      <div>
+        <ul class="social__links">
+          <li>
+            <a href="https://www.facebook.com/laci.ruzik/" target="_blank" rel="noopener"><img class="social__icons"
+                src="https://api.iconify.design/logos/facebook.svg" /></a>
+          </li>
+          <li>
+            <a class="gmail"><img class="social__icons" src="https://api.iconify.design/logos/google-gmail.svg" /></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/ladislav-ruzik" target="_blank" rel="noopener"><img class="social__icons"
+                src="https://api.iconify.design/skill-icons/linkedin.svg" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sections" id="section__1">
+    <div class="section1__nadpis">
+      <h2>Základné údaje a zručnosti</h2>
+    </div>
+    <div class="tabbed__component">
+      <div class="tabbed__component__karty">
+        <button class="tabbed__button tab tab__1 tab__active" data-tab="1">
+          Osobné údaje
+        </button>
+        <button class="tabbed__button tab tab__2" data-tab="2">
+          Znalosti
+        </button>
+        <button class="tabbed__button tab tab__3" data-tab="3">
+          Certifikáty a zručnosti
+        </button>
+      </div>
+      <div class="tab__obsah tab__obsah__1 tab__obsah__active">
+        <div class="box">
+          <i class="ion-ios-person icon__big"></i>
+          <h5 class="tab__nadpis">
+            Osobné údaje </h5><br>
+          <p><b>E-mail:</b> laci.ruzik@gmail.com</p>
+          <p><b>Pohlavie:</b> muž</p>
+          <p><b>Meno:</b> Ladislav</p>
+          <p><b>Priezvisko:</b> Ružík</p>
+          <p><b>Titul:</b> Ing.</p>
+          <p><b>Dátum narodenia:</b> 19.10.1995</p>
+          <p><b>Rodinný stav:</b> slobodný</p>
+        </div>
+        <div class="box">
+          <i class="ion-ios-email icon__big"></i>
+          <h5 class="tab__nadpis">
+            Kontaktná adresa </h5><br>
+          <p><b>Ulica a č.p.:</b> Nábrežná 12</p>
+          <p><b>PSČ a mesto:</b> 94073 Nové Zámky</p>
+          <p><b>Štát:</b> Slovenská republika</p>
+          <p><b>Kraj:</b> Nitriansky</p>
+          <p><b>Telefón:</b> +421944566304</p>
+        </div>
+      </div>
+      <div class="tab__obsah tab__obsah__2">
+        <div class="box">
+          <i class="ion-ios-mic icon__big"></i>
+          <h5 class="tab__nadpis">
+            Jazykové znalosti </h5><br>
+          <p><b>Slovenský: </b> Expert</p>
+          <p><b>Maďarský: </b> Expert</p>
+          <p><b>Anglický: </b> Aktívne, slovom aj písmom</p>
+          <p><b>Nemecký: </b> základy</p>
+        </div>
+        <div class="box">
+          <i class="ion-thumbsup icon__big"></i>
+          <h5 class="tab__nadpis">
+            Ostatné znalosti </h5><br>
+          <p><b>Javascript: </b> mierne pokročilý</p>
+          <p><b>HTML: </b> mierne pokročilý</p>
+          <p><b>CSS: </b> mierne pokročilý</p>
+          <p><b>ReactJS: </b> začiatočník</p>
+          <p><b>Typescript: </b> základy</p>
+          <p><b>PostgreSQL: </b> základy</p>
+          <p><b>MS-Office: </b> pokročilý</p>
+          <p><b>Auto-CAD: </b> základy</p>
+          <p><b>Solidworks: </b> základy</p>
+        </div>
+      </div>
+      <div class="tab__obsah tab__obsah__3">
+        <div class="box">
+          <i class="ion-android-document icon__big"></i>
+          <h5 class="tab__nadpis">
+            Certifikáty a kurzy </h5><br>
+          <p><b>Vodičský preukaz - </b>B</p>
+          <p><b>Odborná spôsobilosť - </b> § 21 – elektrotechnik</p>
+          <p><b>Analýza, meranie a normovanie práce metodikou REFA</b></p>
+        </div>
+        <div class="box">
+          <i class="ion-ios-personadd icon__big"></i>
+          <h5 class="tab__nadpis"> Individuálne dovednosti </h5><br>
+          <p><b>Komunikatívnosť</b></p>
+          <p><b>Tímová spolupráca</b></p>
+          <p><b>Flexibilita</b></p>
+          <p><b>Kreativita</b></p>
+          <p><b>Samostatnosť</b></p>
+          <p><b>Zodpovednosť</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sections" id="section__3">
+    <div class="timeline">
+      <div class="container left">
+        <div class="timeline__obsah">
+          <h2 class="skola__nadpis">SPŠE Nové Zámky</h2>
+          <img class="logo" src="resources/img/SPSE_logo.png" alt="SPŠE Nové Zámky" />
+          <div class="skola">
+            <i class="ion-android-arrow-forward icon__small"></i>
+            Rok nástupu: 2011
+          </div>
+          <div class="skola">
+            <i class="ion-android-arrow-back icon__small"></i>
+            Rok ukončenia: 2015
+          </div>
+          <div class="skola">
+            <i class="ion-home icon__small"></i>
+            Adresa školy: Komárňanská 28, 940 75 Nové Zámky
+          </div>
+          <div class="skola">
+            <i class="ion-laptop icon__small"></i>
+            Odbor / špecializácia : Elektrotechnika
+          </div>
+          <div class="skola">
+            <i class="ion-ios-book icon__small"></i>
+            Poznámka: ukončené maturitnou skúškou
+          </div>
+          <div class="skola">
+            <i class="ion-wifi icon__small"></i>
+            <a class="skola__link" href="https://spojenaskolanz.edupage.org/" target="_blank"
+              rel="noopener noreferrer">@SPŠE
+              Nové Zámky</a>
+          </div>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="timeline__obsah">
+          <h2 class="skola__nadpis">SPU - Nitra</h2>
+          <img class="logo" src="resources/img/SPU_TF_logo.png" alt="SPU TF Nitra" />
+          <div class="skola">
+            <i class="ion-android-arrow-forward icon__small"></i>
+            Rok nástupu: 2015
+          </div>
+          <div class="skola">
+            <i class="ion-android-arrow-back icon__small"></i>
+            Rok ukončenia: 2018
+          </div>
+          <div class="skola">
+            <i class="ion-home icon__small"></i>
+            Adresa školy: Tr. A. Hlinku 2, 949 76 Nitra
+          </div>
+          <div class="skola">
+            <i class="ion-laptop icon__small"></i>
+            Odbor: Technická fakulta – Výrobná technika
+          </div>
+          <div class="skola">
+            <i class="ion-android-laptop icon__small"></i>
+            Špecializácia: Informačné a riadiace systémy vo výrobnej technike
+          </div>
+          <div class="skola">
+            <i class="ion-ios-book icon__small"></i>
+            Poznámka: Ukončené štátnou bakalárskou skúškou
+          </div>
+          <div class="skola">
+            <i class="ion-wifi icon__small"></i>
+            <a class="skola__link" href="https://tf.uniag.sk/sk/uvodna-stranka/" target="_blank"
+              rel="noopener noreferrer">@SPU - Nitra -
+              TF</a>
+          </div>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="timeline__obsah">
+          <h2 class="skola__nadpis">SPU - Nitra</h2>
+          <img class="logo" src="resources/img/SPU_TF_logo.png" alt="SPU TF Nitra" />
+          <div class="skola">
+            <i class="ion-android-arrow-forward icon__small"></i>
+            Rok nástupu: 2018
+          </div>
+          <div class="skola">
+            <i class="ion-android-arrow-back icon__small"></i>
+            Rok ukončenia: 2020
+          </div>
+          <div class="skola">
+            <i class="ion-home icon__small"></i>
+            Adresa školy: Tr. A. Hlinku 2, 949 76 Nitra
+          </div>
+          <div class="skola">
+            <i class="ion-laptop icon__small"></i>
+            Odbor: Technická fakulta – Strojárstvo
+          </div>
+          <div class="skola">
+            <i class="ion-android-laptop icon__small"></i>
+            Špecializácia: Riadiace systémy vo výrobnej technike
+          </div>
+          <div class="skola">
+            <i class="ion-ios-book icon__small"></i>
+            Poznámka: Ukončené štátnou diplomovou skúškou
+          </div>
+          <div class="skola">
+            <i class="ion-wifi icon__small"></i>
+            <a class="skola__link" href="https://tf.uniag.sk/sk/uvodna-stranka/" target="_blank"
+              rel="noopener noreferrer">@SPU - Nitra -
+              TF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section__priebeh__zamestnani" id="section__4">
+    <div class="priebeh__zamestnani__row">
+      <h2>Priebeh zamestnaní</h2><br />
+    </div>
+    <div class="priebeh__zamestnani__row">
+      <div class="priebeh">
+        <p>
+          <u>Príležitostné práce – brigády: </u> <br />
+          &bull; Novofruct SK, s.r.o., Nové Zámky <br />
+          &bull; Inzi SK s.r.o., Šurany <br />
+          &bull; Bang Joo Electronics Slovakia spol. s.r.o., Šurany <br />
+          &bull; Osram Slovakia s.r.o., Nové Zámky <br />
+          &bull; SOVA Digital a.s., Nové Zámky <br />
+          &bull; GOOAL Academy – tréner, Nové Zámky <br />
+          &bull; Raftys Slovakia s.r.o, Nové Zámky<br /><br />
+          <u>Od 2020: </u> <br />
+          &bull; KROMBERG & Schubert s.r.o. - Priemyselný inžinier
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section__projekty" id="section__5">
+    <p class="section__projekty__nadpis">Projekty</p>
+
+    <ul class="projekty">
+      <li>
+        <a href="projekty/kalkulacka/index.html" target="_blank" rel="noopener">
+          <div class="flip__box__vertical">
+            <div class="flip__box__inner__vertical">
+              <div class="flip__box__front__vertical">
+                <figure class="projekty__foto">
+                  <img src="resources/img/kalk.png" alt="Fotka aplikácie - Kalkulačka" />
+                </figure>
+              </div>
+              <div class="flip__box__back__vertical">
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/html.svg" alt="HTML LOGO" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/css.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/javascript.svg" />
+                <p class="projekty__nazov">Kalkulačka</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="projekty/hadzanie kockou/index.html" target="_blank" rel="noopener">
+          <div class="flip__box__horizontal">
+            <div class="flip__box__inner__horizontal">
+              <div class="flip__box__front__horizontal">
+                <figure class="projekty__foto">
+                  <img src="resources/img/kocka.png" alt="Forka aplikácie - Hádzanie kockou" />
+                </figure>
+              </div>
+              <div class="flip__box__back__horizontal">
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/html.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/css.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/javascript.svg" />
+                <p class="projekty__nazov">Hádzanie kockou</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="projekty/uhadni cislo/index.html" target="_blank" rel="noopener">
+          <div class="flip__box__vertical">
+            <div class="flip__box__inner__vertical">
+              <div class="flip__box__front__vertical">
+                <figure class="projekty__foto">
+                  <img src="resources/img/uhadni cislo.png" alt="Fotka aplikácie - Uhádni číslo!" />
+                </figure>
+              </div>
+              <div class="flip__box__back__vertical">
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/html.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/css.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/javascript.svg" />
+                <p class="projekty__nazov">Uhádni číslo!</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <ul class="projekty">
+      <li>
+        <a href="projekty/pexeso/index.html" target="_blank" rel="noopener">
+          <div class="flip__box__horizontal">
+            <div class="flip__box__inner__horizontal">
+              <div class="flip__box__front__horizontal">
+                <figure class="projekty__foto">
+                  <img src="resources/img/pexeso.png" alt="Fotka aplikácie - Pexeso" />
+                </figure>
+              </div>
+              <div class="flip__box__back__horizontal">
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/html.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/css.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/javascript.svg" />
+                <p class="projekty__nazov">Pexeso</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="projekty/uhadni farbu/index.html" target="_blank" rel="noopener">
+          <div class="flip__box__vertical">
+            <div class="flip__box__inner__vertical">
+              <div class="flip__box__front__vertical">
+                <figure class="projekty__foto">
+                  <img src="resources/img/uhadni farbu.png" alt="Fotka aplikácie - Uhádni farbu!" />
+                </figure>
+              </div>
+              <div class="flip__box__back__vertical">
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/html.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/css.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/javascript.svg" />
+                <p class="projekty__nazov">Uhádni farbu!</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      </li>
+      <li>
+        <a href="projekty/rest-countries API/index.html" target="_blank" rel="noopener">
+          <div class="flip__box__horizontal">
+            <div class="flip__box__inner__horizontal">
+              <div class="flip__box__front__horizontal">
+                <figure class="projekty__foto">
+                  <img src="resources/img/restcountries.png" alt="Fotka aplikácie - Rest-countries API" />
+                </figure>
+              </div>
+              <div class="flip__box__back__horizontal">
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/html.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/css.svg" />
+                <img class="web__icon" src="https://api.iconify.design/skill-icons/javascript.svg" />
+                <p class="projekty__nazov">Rest-countries API</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <div>
+      <ul class="social__links social__links__footer">
+        <li>
+          <a href="https://www.facebook.com/laci.ruzik/" target="_blank" rel="noopener"><img class="social__icons"
+              src="https://api.iconify.design/logos/facebook.svg" /></a>
+        </li>
+        <li>
+          <a class="gmail"><img class="social__icons" src="https://api.iconify.design/logos/google-gmail.svg" /></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/ladislav-ruzik" target="_blank" rel="noopener"><img class="social__icons"
+              src="https://api.iconify.design/skill-icons/linkedin.svg" /></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
