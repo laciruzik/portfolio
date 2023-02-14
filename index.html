@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css" />
@@ -12,7 +11,6 @@
   <title>Ing. Ladislav Ružík</title>
   <script defer src="script.js"></script>
 </head>
-
 <body>
   <header>
     <a class="navbar__meno"> Ing. Ladislav Ružík</a>
@@ -21,7 +19,7 @@
         <p class="tlacidlo__X"> &#x2716 </p>
       </div>
       <a href="#section__Domov">Domov</a>
-      <a href="#section__1">Základné údaje</a>
+      <a href="#section__2">Základné údaje</a>
       <a href="#section__3">Vzdelanie</a>
       <a href="#section__4">Priebeh zamestnaní</a>
       <a href="#section__5">Moje projekty</a>
@@ -32,15 +30,19 @@
       <div class="ciara"></div>
     </div>
   </header>
-
   <section class="section__Domov" id="section__Domov">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <embed src="/resources/pdf/Životopis - Ružík.pdf" frameborder="0" width="100%" height="800px">
+      </div>
+    </div>
     <div class="vitajte__div">
       <div>
         <h1 class="vitajte__nadpis"> Vitajte! </h1>
       </div>
       <div>
-        <a class="button__main" href="/resources/pdf/Životopis - Ružík.pdf" target="_blank" rel="noopener">📩
-          Životopis</a>
+        <button id="button__modal">📩 Životopis </button>
         <a class="button__main" href="#section__5">Moje Projekty</a>
       </div>
 
@@ -64,9 +66,8 @@
       </div>
     </div>
   </section>
-
-  <section class="sections" id="section__1">
-    <div class="section1__nadpis">
+  <section class="sections" id="section__2">
+    <div class="section2__nadpis">
       <h2>Základné údaje a zručnosti</h2>
     </div>
     <div class="tabbed__component">
@@ -409,7 +410,6 @@
       </li>
     </ul>
   </section>
-
   <footer>
     <div>
       <ul class="social__links social__links__footer">
