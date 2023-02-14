@@ -6,11 +6,12 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   min-height: 100vh;
   background-color: #fff;
   color: rgb(59, 59, 59);
-  font-family: "Quicksand", "Sans-Serif";@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+  font-family: "Quicksand", "Sans-Serif";
   font-weight: 500;
   font-size: 115%;
   text-rendering: optimizeLegibility;
