@@ -1,6 +1,6 @@
 "use strict";
 
-///////////////////CLOCK////////////
+/* --------------- CLOCK ------------------ */
 
 {
   function showTime() {
@@ -23,7 +23,10 @@
   showTime();
 }
 
-///tabbed//////
+////////////////////////////////////////////////////////////////
+
+/* --------------- TABBED COMPONENT ------------------ */
+
 {
   const tab = document.querySelectorAll(".tab");
   const tabKarty = document.querySelector(".tabbed__component__karty");
@@ -31,50 +34,75 @@
 
   tabKarty.addEventListener("click", function (e) {
     const clicked = e.target.closest(".tab");
-
-    // Guard clause
     if (!clicked) return;
-
-    // Remove active classes
     tab.forEach((t) => t.classList.remove("tab__active"));
     tabObsah.forEach((c) => c.classList.remove("tab__obsah__active"));
-
-    // Activate tab
     clicked.classList.add("tab__active");
-
-    // Activate content area
     document
       .querySelector(`.tab__obsah__${clicked.dataset.tab}`)
       .classList.add("tab__obsah__active");
   });
 }
 
-////////////////////////////
+////////////////////////////////////////////////////////////////
 
-//Javascript for Navigation effect on scroll
-window.addEventListener("scroll", function () {
-  let header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
-});
+/* --------------- NAVBAR ------------------ */
 
-//Javascript for responsive navigation sidebar Nav
-let menu = document.querySelector(".navbar__menu");
-let tladicloMenu = document.querySelector(".tlacidlo__menu");
-let tlacidloX = document.querySelector(".tlacidlo__X");
-
-tladicloMenu.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});
-
-tlacidloX.addEventListener("click", () => {
-  menu.classList.remove("active");
-});
-
-///////////////////////
-
-let gmail = document.querySelectorAll(".gmail").forEach((a) => {
-  a.addEventListener("click", function (e) {
-    window.open("mailto:laci.ruzik@gmail.com");
-    e.preventDefault();
+{
+  window.addEventListener("scroll", function () {
+    let header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
   });
-});
+
+  let menu = document.querySelector(".navbar__menu");
+  let tladicloMenu = document.querySelector(".tlacidlo__menu");
+  let tlacidloX = document.querySelector(".tlacidlo__X");
+
+  tladicloMenu.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+
+  tlacidloX.addEventListener("click", () => {
+    menu.classList.remove("active");
+  });
+}
+
+////////////////////////////////////////////////////////////////
+
+/* --------------- EMAIL------------------ */
+
+{
+  let gmail = document.querySelectorAll(".gmail").forEach((a) => {
+    a.addEventListener("click", function (e) {
+      window.open("mailto:laci.ruzik@gmail.com");
+      e.preventDefault();
+    });
+  });
+}
+////////////////////////////////////////////////////////////////
+
+/* --------------- MODAL-CV ------------------ */
+
+{
+  let modal = document.getElementById("myModal");
+
+  let buttonModal = document.getElementById("button__modal");
+
+  let close = document.getElementsByClassName("close")[0];
+
+  buttonModal.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  close.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+}
+
+////////////////////////////////////////////////////////////////

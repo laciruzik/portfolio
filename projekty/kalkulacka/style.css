@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+html {
+  font-family: "Orbitron", sans-serif;
+}
 
 body {
-  font-family: "Orbitron", sans-serif;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 50rem;
-  background-color: rgba(0, 0, 0, 0.404);
+  background-color: SeaShell;
   height: 100%;
 }
 
 .container {
-  background: #000000;
-  margin-left: 1.8em;
+  background: LightBlue;
   padding: 20px;
   border-radius: 8px;
 }
@@ -29,22 +31,24 @@ body {
 }
 
 .row button {
-  width: 60px;
-  height: 30px;
+  width: 16.7%;
+  height: 2rem;
   font-size: 16px;
   font-style: oblique;
   border: none;
   outline: none;
-  margin: 5px;
+  margin: 1.2%;
   border-radius: 12px;
-}
-
-.row button:hover {
-  box-shadow: inset 5px 5px 8px #0078a0, inset -5px -5px 8px #0078a0;
-  background: #fff;
+  box-shadow: 5px 5px 5px DarkBlue;
+  background-color: CornflowerBlue;
+  color: #fff;
+  font-weight: 600;
 }
 
 .display #screen {
+  background-color: CornflowerBlue;
+  box-shadow: inset 5px 5px 5px DarkBlue;
+  color: #fff;
   margin-bottom: 0.5em;
   width: 95%;
   height: 60px;
@@ -53,48 +57,33 @@ body {
   border: none;
   text-align: right;
   padding-right: 0.5em;
-  background: #ecf0f3;
+  margin-right: 0.5em;
   border-radius: 6px;
-  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
-}
-
-#degRad {
-  background: #f39821;
-  color: #fff;
-}
-
-#degRad:hover {
-  box-shadow: inset 5px 5px 8px #865009, inset -5px -5px 8px #865009;
 }
 
 #eval {
-  width: 40%;
-
-  height: 40px;
+  width: 98.5%;
   font-size: large;
-  font-weight: bold;
-  background: #33ccff;
+  font-weight: 600;
+  background: Salmon;
   color: #fff;
-}
-
-#eval:hover {
-  box-shadow: inset 5px 5px 8px #0078a0, inset -5px -5px 8px #0078a0;
 }
 
 #ac {
-  background: #33cc33;
+  font-weight: 600;
+  background: Salmon;
   color: #fff;
-}
-
-#ac:hover {
-  box-shadow: inset 5px 5px 8px #228822, inset -5px -5px 8px #228822;
 }
 
 #ce {
-  background: #ff3399;
+  font-weight: 600;
+  background: Salmon;
   color: #fff;
 }
 
-#ce:hover {
-  box-shadow: inset 5px 5px 8px #d32a7f, inset -5px -5px 8px #d32a7f;
+#eval:hover,
+#ac:hover,
+#ce:hover,
+.row button:hover {
+  background: orange;
 }
