@@ -98,7 +98,7 @@ h3 {
 .button__main:visited {
   display: inline-block;
   padding: 10px 30px;
-  font-weight: 450;
+  font-weight: 550;
   text-decoration: none;
   border-radius: 200px;
   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
