@@ -15,6 +15,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  width:100%;
 }
 
 .priebeh__zamestnani__row {
