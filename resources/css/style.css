@@ -6,7 +6,10 @@
   box-sizing: border-box;
 }
 
-html,
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   background-color: #fff;
@@ -16,7 +19,7 @@ body {
   font-size: 115%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+
   width:100%;
 }
 
