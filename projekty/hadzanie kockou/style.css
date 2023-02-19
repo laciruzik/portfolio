@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   height: 100vh;
   color: rgb(0, 0, 0);
@@ -216,24 +216,25 @@ main {
   }
 
   .name {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .score {
-    font-size: 6rem;
+    font-size: 6.5em;
   }
 
   .btn {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 
   .current__nadpis {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .current__skore {
-    font-size: 2rem;
+    font-size: 3rem;
   }
+
   .hrac__1 {
     padding-right: 1rem;
   }
@@ -252,31 +253,72 @@ main {
   }
 
   .name {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .score {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
 
   .btn {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 
   .current__nadpis {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .current__skore {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .hrac__1 {
-    padding-right: 1rem;
+    padding-right: 1.5rem;
   }
   .hrac__0 {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
   .kocka {
     height: 6rem;
+  }
+
+  .hrac__1 {
+    padding-top: 12rem;
+    padding-right: 1.5rem;
+  }
+  .hrac__0 {
+    padding-top: 12rem;
+    padding-left: 1.5rem;
+  }
+  .current {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    width: 40rem;
+    height: 65rem;
+  }
+
+  .btn__hodit__kockou {
+    top: 36.3rem;
+    width: 40%;
+  }
+  .btn__podrzat {
+    top: 45.1rem;
+  }
+  .hrac {
+    padding: 4rem;
+  }
+
+  .hrac__1 {
+    padding-top: 14rem;
+  }
+  .hrac__0 {
+    padding-top: 14rem;
+  }
+
+  .kocka {
+    top: 21.5rem;
   }
 }

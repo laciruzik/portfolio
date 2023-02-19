@@ -32,8 +32,8 @@ body {
 
 .row button {
   width: 16.7%;
-  height: 2rem;
-  font-size: 16px;
+  height: 2.2rem;
+  font-size: 18px;
   font-style: oblique;
   border: none;
   outline: none;
@@ -69,13 +69,8 @@ body {
   color: #fff;
 }
 
+#ce,
 #ac {
-  font-weight: 600;
-  background: Salmon;
-  color: #fff;
-}
-
-#ce {
   font-weight: 600;
   background: Salmon;
   color: #fff;
@@ -86,4 +81,12 @@ body {
 #ce:hover,
 .row button:hover {
   background: orange;
+}
+
+@media screen and (max-width: 430px) {
+  .row button {
+    width: 16%;
+    height: 2.4rem;
+    font-size: 15px;
+  }
 }

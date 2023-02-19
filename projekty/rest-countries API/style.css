@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 * {
   box-sizing: border-box;
@@ -118,16 +118,6 @@ select {
   transform: translate(2px, 2px);
 }
 
-@media screen and (max-height: 620px) {
-  h1 {
-    padding-top: 0;
-    margin: 0;
-  }
-  #app {
-    padding-top: 0;
-  }
-}
-
 @media screen and (max-width: 1439px) {
   #app {
     padding-left: 10px;
@@ -165,6 +155,10 @@ select {
   .button {
     max-width: 25%;
   }
+
+  #info-container {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 690px) {
@@ -178,5 +172,15 @@ select {
   }
   select {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-height: 620px) {
+  h1 {
+    padding-top: 0;
+    margin: 0;
+  }
+  #app {
+    padding-top: 0;
   }
 }
